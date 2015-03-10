@@ -1,81 +1,657 @@
-<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sgrio2015 by cfelippe</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Sgrio2015</h1>
-        <p>Repository with Scrum Gathering Rio 2015 Agenda</p>
+    <div id="dias">
+      <ul>
+        <li><a href="#dia1">QUI 13/08</a></li>
+        <li><a href="#dia2">SEX 14/08</a></li>
+        <li><a href="#dia3">SÁB 15/08</a></li>
+      </ul>
 
-        <p class="view"><a href="https://github.com/cfelippe/sgrio2015">View the Project on GitHub <small>cfelippe/sgrio2015</small></a></p>
+      <div id="dia1">
+        <p class="info">Coaches Clinic é um serviço para os participantes do Scrum Gathering em que eles obtêm ajuda gratuita de coaches experientes. Coaches voluntários são recrutados no próprio Scrum Gathering, um processo é definido para os participantes se inscreverem em sessões curtas com os coaches e é criado um espaço para as sessões de coaching. O serviço estará disponível durante todo o Scrum Gathering, de forma que coaches e participantes se encontram no espaço designado.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Horários</th>
+              <th>Angra A</th>
+              <th>Angra B</th>
+              <th>Angra C</th>
+              <th>Búzios B</th>
+              <th>Foyer</th>
+            </tr>
+          </thead>
+          <tbody>
+    
+            <tr>
+              <th>08:00 às 09:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra simples">Credenciamento</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>09:00 às 09:20</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Abertura do Gathering</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>09:20 às 10:10</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Keynote</p>
+                <p class="palestrante">A Confirmar</p>
+              </td>
+            </tr>
+            <tr>
+              <th>10:10 às 10:40</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Coffee Break</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>10:40 às 11:30</th>
+              <td class="evento gov">
+                <p class="tipo">Agile Gov</p>
+                <p class="palestra">Baixa de empresas na hora: como a Agilidade nos ajudou a criar um produto que tirou o Brasil da era medieval</p>
+                <p class="palestrante">Leonardo Benedicto Nunes</p>
+              </td>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Fábrica de Software ou Fábrica de Pessoas?</p>
+                <p class="palestrante">Ari do Amaral Torres Filho</p>
+              </td>
+              <td class="evento pm">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">eXtreme eXperiment, 8 versões do sistema em 2 dias para validar ideias</p>
+                <p class="palestrante">Guilherme Bruzzi </p>
+              </td>
+              <td class="evento tools" rowspan="2">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Da Integração Contínua a Entrega Contínua usando somente ferramentas open-source</p>
+                <p class="palestrante">Raphael Paiva</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>11:40 às 12:30</th>
+              <td class="evento pm">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">Futebol Combina com Agilidade</p>
+                <p class="palestrante">Maximiliano Lannes</p>
+              </td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Análise de Negócios - Papel ou Competência?</p>
+                <p class="palestrante">Marcelo Neves</p>
+              </td>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Só tem maluco em time Scrum! Entenda de Perfis Psicológicos, valores e motivadores e acelere seu Team Building</p>
+                <p class="palestrante">Alexandre Amorim</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>12:30 às 14:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Intervalo para o almoço</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>14:00 às 14:50</th>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Estimar é crime?</p>
+                <p class="palestrante">Juliano Ribeiro</p>
+              </td>
+              <td class="evento gov">
+                <p class="tipo">Agile Gov</p>
+                <p class="palestra">Como fazer um Portal de 30 milhões de usuários em 3 semanas na administração pública utilizando SCRUM?</p>
+                <p class="palestrante">Thiago Dieb</p>
+              </td>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">DevOps é uma prática,cultura ou um cargo?</p>
+                <p class="palestrante">Carlos Felippe Cardoso</p>
+              </td>
+              <td class="evento coach" rowspan="2">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Criando a sua própria retrospectiva</p>
+                <p class="palestrante">Charlles Pinnon e Luciana Silva</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>15:00 às 15:50</th>
+              <td class="evento basics">
+                <p class="tipo">Basics</p>
+                <p class="palestra">Agile: O Poder da I(n)teracção</p>
+                <p class="palestrante">Nuno Rafael Gomes</p>
+              </td>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Utilizando o Docker para um ambiente de múltiplos processos, pode isso?</p>
+                <p class="palestrante">Wilson Ricardo Jr e Marina Melo Pires</p>
+              </td>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Are We Really Being Agile? - Agile Patterns and Anti-Patterns</p>
+                <p class="palestrante">Richard Cheng</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>16:00 às 16:50</th>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Integração contínua. Quem quer, faz!</p>
+                <p class="palestrante">Isaías Alves</p>
+              </td>
+              <td class="evento gov">
+                <p class="tipo">Agile Gov</p>
+                <p class="palestra">Demystifying Standards and Reference Models with Agile Concepts and Gamification</p>
+                <p class="palestrante">Analia Irigoyen</p>
+              </td>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Expandindo o Kanban no Departamento de Computação Gráfica da TV Globo</p>
+                <p class="palestrante">Jose Almeida Jr</p>
+              </td>
+              <td class="evento pm" rowspan="2">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">Workshop SIMPLe: uma abordagem simples orientada a problemas para o desenvolvimento de software</p>
+                <p class="palestrante">Rafael Sabbagh</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr> 
+              <th>17:00 às 17:50</th>
+              <td class="evento gov">
+                <p class="tipo">Agile Gov</p>
+                <p class="palestra">Agilidade no Governo: Uma Missão Possível</p>
+                <p class="palestrante">Sônia Moreira Goldzweig e Avelino Ferreira Gomes</p>
+              </td>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Banco de dados e agilidade em grandes empresas</p>
+                <p class="palestrante">Israel Crisanto</p>
+              </td>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Controle de versão Ágil com One Piece Flow e Git Flows</p>
+                <p class="palestrante">Ayrton Araújo</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
 
-        <ul>
-          <li><a href="https://github.com/cfelippe/sgrio2015/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/cfelippe/sgrio2015/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/cfelippe/sgrio2015">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+      <div id="dia2">
+        <table>
+          <thead>
+            <tr> 
+              <th>Horários</th>
+              <th>Angra A</th>
+              <th>Angra B</th>
+              <th>Angra C</th>
+              <th>Búzios B</th>
+              <th>Foyer</th>
+            </tr>
+          </thead>
+          <tbody>
+    
+            <tr> 
+              <th>08:00 às 09:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Credenciamento</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>09:00 às 09:20</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Novidades do segundo dia</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>09:20 às 10:10</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Keynote</p>
+                <p class="palestrante">A Confirmar</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>10:10 às 10:40</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Coffee Break</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>10:40 às 11:30</th>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Testes Automatizados com Alto valor de Negócio e Baixo Custo de Manutenção</p>
+                <p class="palestrante">Taise Dias da Silva</p>
+              </td>
+              <td class="evento pm">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">Como testar uma ideia e construir um produto em 24 horas</p>
+                <p class="palestrante">Romulo Tavares</p>
+              </td>
+              <td class="evento gov">
+                <p class="tipo">Agile Gov</p>
+                <p class="palestra">De cabeça para baixo: uma visão bottom up do início de transição ágil em uma grande empresa pública</p>
+                <p class="palestrante">Rafael Ando, Leonardo Benedicto Nunes e Alex Romano Rodrigues</p>
+              </td>
+              <td class="evento coach" rowspan="2">
+                <p class="tipo">Coach</p>
+                <p class="palestra">ScrumMaster 3.0, tudo que você deveria saber mas não deu tempo de aprender em 2 dias.</p>
+                <p class="palestrante">Rodrigo de Toledo</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>11:40 às 12:30</th>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Construindo a melhoria contínua: Ecossistema de Métricas com LEGO</p>
+                <p class="palestrante">Davi Gabriel da Silva</p>
+              </td>
+              <td class="evento pm">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">De onde vem os bons POs?</p>
+                <p class="palestrante">Leonardo Pabon</p>
+              </td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">A Transformação agile do Hotel Urbano - os últimos 12 meses</p>
+                <p class="palestrante">João Marcelo Sgreccia</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>12:30 às 14:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Intervalo para o almoço</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>14:00 às 14:50</th>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">DevOps: O uso do controle de versão para todos artefatos de produção como prática de Continuous Delivery</p>
+                <p class="palestrante">Marcio Sete</p>
+              </td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Kanban: Agilidade para ambientes conservadores</p>
+                <p class="palestrante">Rodrigo Yoshima</p>
+              </td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Ideias sobre como escalar ágil</p>
+                <p class="palestrante">Fernando de La Riva</p>
+              </td>
+              <td class="evento pm" rowspan="2">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">Workshop 101: Concebendo produtos de forma ágil (e divertida)</p>
+                <p class="palestrante">Diana Correa</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>15:00 às 15:50</th>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Testando na nuvem a UI e o JavaScript de sua aplicação</p>
+                <p class="palestrante">Stefan Teixeira</p>
+              </td>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">How coaching had helped to change my company</p>
+                <p class="palestrante">Avelar Leão</p>
+              </td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Agile UX: Pensando a User Experience no mundo ágil.</p>
+                <p class="palestrante">Diogo Seffair Riker</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <td>16:00 às 16:50</td>
+              <td class="evento trends">
+                <p class="tipo">Trends</p>
+                <p class="palestra">Complexity is dead: at least for the end user</p>
+                <p class="palestrante">Érica Briones Graciano</p>
+              </td>
+              <td class="evento pm">
+                <p class="tipo">Prod. Man.</p>
+                <p class="palestra">Se tornando o livro de receitas do seu cliente: uma experiência de validação com MVP Concierge</p>
+                <p class="palestrante">Hugo Ayres e Rafael Orosco</p>
+              </td>
+              <td class="evento basics">
+                <p class="tipo">Basics</p>
+                <p class="palestra">Contratando Métodos Ágeis: Que tipo de contrato usar?</p>
+                <p class="palestrante">Rafael Rodrigues</p>
+              </td>
+              <td class="evento coach" rowspan="2">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Os 5 mitos do empowerment: quais são e como se livrar deles</p>
+                <p class="palestrante">Marcos Garrido</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>17:00 às 17:50</th>
+              <td class="evento coach">
+                <p class="tipo">Coach</p>
+                <p class="palestra">Arquétipos de stakeholders - Identificando, lidando e cooperando com stakeholders em projetos complexos</p>
+                <p class="palestrante">Victor Lima</p>
+              </td>
+              <td class="evento tools">
+                <p class="tipo">Tools</p>
+                <p class="palestra">Testes de aceitação automatizados com robotium utilizando a técnica de BDD</p>
+                <p class="palestrante">Rafael Chiavegatto</p>
+              </td>
+              <td class="evento basics">
+                <p class="tipo">Basics</p>
+                <p class="palestra">Cerimônias sem cerimônia: dicas de como deixar o planning, a review, a restrospectiva e a daily mais produtivas</p>
+                <p class="palestrante">Cristina Silveira Otto e Joyce Bastos</p>
+              </td>
+              <td class="evento">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/cfelippe">cfelippe</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      <div id="dia3">
+        <table>
+          <thead>
+            <tr> 
+              <th>Horários</th>
+              <th>Angra A</th>
+              <th>Angra B</th>
+              <th>Angra C</th>
+              <th>Búzios B</th>
+              <th>Foyer</th>
+            </tr>
+          </thead>
+          <tbody>
+    
+            <tr>
+              <th>09:00 às 09:30</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Boas-vindas para o terceiro dia do evento</p>
+                <p class="palestrante">Carol McEwan</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>09:30 às 10:50</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Keynote Knowledge21</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>11:00 às 11:50</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Abertura Open Spaces</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>12:00 às 13:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Intervalo para o almoço</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>13:00 às 13:30</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>13:30 às 14:00</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>14:00 às 14:30</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>14:30 às 15:00</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>15:00 às 15:30</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>15:30 às 16:00</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>16:00 às 16:30</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>16:30 às 17:00</th>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p class="tipo"></p>
+                <p class="palestra">Open Space</p>
+              </td>
+              <td class="evento simples">
+                <p>Coaches Clinic</p>
+              </td>
+            </tr>
+    
+            <tr>
+              <th>17:00 às 18:00</th>
+              <td class="evento simples" colspan="5">
+                <p class="palestra">Encerramento do Regional Scrum Gathering 2015</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-37868320-3");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
   </body>
 </html>
